@@ -12,7 +12,8 @@ on:
       - my-pages
     paths:
       - _config.yml
-
+      - _theme:_config.yml
+      
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   # Need `contents: read` to checkout the repository.
@@ -65,7 +66,7 @@ jobs:
           from_step: 2
           to_step: 3
           branch_name: my-pages
-theme: minima
+_theme: minima
 title: oldyang
 author: yang
 description: learn how to use github
